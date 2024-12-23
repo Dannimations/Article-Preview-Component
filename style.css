@@ -1,0 +1,136 @@
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+}
+
+body{
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    font-family: 'Manrope', 'Segoe UI';
+}
+
+
+h3{
+    color: var(--Very-Dark-Grayish-Blue);
+}
+p{
+    color: var(--Grayish-Blue);
+}
+
+.mainContainer{
+    background-color: white;
+    border-radius: .5rem;
+    overflow: hidden;
+    @media (min-width: 800px){
+        width: 60%;
+        height: 20rem;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 10px 100px var(--Grayish-Blue);
+
+    }
+}
+
+
+.drawers{
+    width: 100%;
+    @media (min-width: 800px){
+        width: 40%;
+    }
+}
+
+.bottomMitchelle{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    @media (min-width: 800px){
+        margin-top: -3rem;
+    }
+}
+
+.mitchelle{
+    width: 20%;
+    border-radius: 50%;
+    padding: 2rem;
+    
+}
+
+.top{
+    padding: 2rem;
+}
+
+.text p{
+    margin-top: -1rem;
+}
+
+.share{
+    margin-left: 1rem;
+    background-color: var(--Light-Grayish-Blue);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.hide{
+    z-index: -1;
+}
+
+.bottomShare{
+    position: relative;
+    padding: 2rem;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(min-width: 800px){
+        width: 14rem;
+        margin-left: 14rem;
+        padding: 1rem;
+        border-radius: .4rem;
+        position: absolute;
+        top: 16.5rem;
+        left: 35rem;
+    }
+
+}
+
+.buttonTwo{
+    @media(min-width: 800px){
+        display: none;
+    }
+}
+
+.bottomShare::after{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    content: '';
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    rotate: 45deg;
+    right: 7rem;
+    bottom: -.6rem;
+}
+
+
+.bottomShare span{
+    text-transform: uppercase;
+    color: var(--Light-Grayish-Blue);
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6rem;
+    margin-left: -3rem;
+}
